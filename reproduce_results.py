@@ -123,7 +123,7 @@ def citation_overlap(rows: list[dict[str, str]]) -> dict[str, dict[str, int | fl
     return result
 
 
-def cohen_kappa(first: list[str], second: list[str]) -> float:
+def cohen_kappa(first: list[str], second: list[str]) -> float | None:
     if not first or len(first) != len(second):
         raise ValueError("Coder value lists must be nonempty and have equal length")
     n = len(first)
@@ -133,11 +133,12 @@ def cohen_kappa(first: list[str], second: list[str]) -> float:
     second_counts = Counter(second)
     expected = sum(first_counts[c] / n * second_counts[c] / n for c in cats)
     if math.isclose(expected, 1.0):
-        return 1.0 if math.isclose(observed, 1.0) else 0.0
+        # With no category variation, chance agreement is 1 and kappa is undefined.
+        return None
     return (observed - expected) / (1 - expected)
 
 
-def reliability(filename: str) -> dict[str, dict[str, int | float]]:
+def reliability(filename: str) -> dict[str, dict[str, int | float | None]]:
     rows = read_csv(filename)
     if not rows:
         raise ValueError(f"No coder rows in {filename}")
@@ -148,10 +149,11 @@ def reliability(filename: str) -> dict[str, dict[str, int | float]]:
         first = [r[first_key] for r in rows]
         second = [r[second_key] for r in rows]
         n = len(rows)
+        kappa = cohen_kappa(first, second)
         result[first_key.removeprefix("coder_1_")] = {
             "n": n,
             "exact_agreement_pct": round(100 * sum(a == b for a, b in zip(first, second)) / n, 2),
-            "cohens_kappa": round(cohen_kappa(first, second), 4),
+            "cohens_kappa": round(kappa, 4) if kappa is not None else None,
         }
     return result
 

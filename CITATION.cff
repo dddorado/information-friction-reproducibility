@@ -5,10 +5,11 @@ title: "Reproducibility materials for Measuring Source Visibility in Generative 
 abstract: >-
   Coded source records, paired coder values, codebook, and a script to recalculate
   descriptive results for a paired audit of English and Filipino local-information
-  queries in Philippine cities.
+  queries in Philippine cities. Includes the preserved initial P01-P08 reliability
+  pass and dated project-lead adjudication materials.
 authors:
   - family-names: Dorado
     given-names: Dan Anthony
 repository-code: "https://github.com/dddorado/information-friction-reproducibility"
-version: "1.0.0"
+version: "1.1.0"
 date-released: "2026-10-15"
