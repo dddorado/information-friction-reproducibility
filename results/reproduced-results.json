@@ -1,0 +1,239 @@
+{
+  "audit_counts": {
+    "query_language_system_combinations": 96,
+    "unique_normalized_source_records": 561,
+    "citation_overlap_observations": 48
+  },
+  "source_visibility_by_surface": {
+    "chatgpt_visible_citation": {
+      "records": 182,
+      "strict_yes": 157,
+      "strict_pct": 86.3,
+      "inclusive_yes": 162,
+      "inclusive_pct": 89.0
+    },
+    "google_ai_overview": {
+      "records": 177,
+      "strict_yes": 105,
+      "strict_pct": 59.3,
+      "inclusive_yes": 160,
+      "inclusive_pct": 90.4
+    },
+    "google_ai_overview;google_conventional": {
+      "records": 21,
+      "strict_yes": 14,
+      "strict_pct": 66.7,
+      "inclusive_yes": 16,
+      "inclusive_pct": 76.2
+    },
+    "google_conventional": {
+      "records": 181,
+      "strict_yes": 73,
+      "strict_pct": 40.3,
+      "inclusive_yes": 150,
+      "inclusive_pct": 82.9
+    }
+  },
+  "source_visibility_by_system_and_language": {
+    "ChatGPT_Search / English": {
+      "records": 90,
+      "strict_yes": 80,
+      "strict_pct": 88.9,
+      "inclusive_yes": 84,
+      "inclusive_pct": 93.3
+    },
+    "ChatGPT_Search / Filipino": {
+      "records": 92,
+      "strict_yes": 77,
+      "strict_pct": 83.7,
+      "inclusive_yes": 78,
+      "inclusive_pct": 84.8
+    },
+    "Google_Search / English": {
+      "records": 201,
+      "strict_yes": 104,
+      "strict_pct": 51.7,
+      "inclusive_yes": 174,
+      "inclusive_pct": 86.6
+    },
+    "Google_Search / Filipino": {
+      "records": 178,
+      "strict_yes": 88,
+      "strict_pct": 49.4,
+      "inclusive_yes": 152,
+      "inclusive_pct": 85.4
+    }
+  },
+  "matched_language_contrasts": {
+    "ChatGPT_Search / strict": {
+      "pairs": 24,
+      "filipino_higher": 3,
+      "english_higher": 8,
+      "same": 13,
+      "median_difference_percentage_points": 0.0,
+      "range_percentage_points": [
+        -50.0,
+        40.0
+      ]
+    },
+    "ChatGPT_Search / inclusive": {
+      "pairs": 24,
+      "filipino_higher": 1,
+      "english_higher": 9,
+      "same": 14,
+      "median_difference_percentage_points": 0.0,
+      "range_percentage_points": [
+        -50.0,
+        15.0
+      ]
+    },
+    "Google_Search / strict": {
+      "pairs": 24,
+      "filipino_higher": 11,
+      "english_higher": 11,
+      "same": 2,
+      "median_difference_percentage_points": 0.0,
+      "range_percentage_points": [
+        -44.3,
+        50.0
+      ]
+    },
+    "Google_Search / inclusive": {
+      "pairs": 24,
+      "filipino_higher": 6,
+      "english_higher": 9,
+      "same": 9,
+      "median_difference_percentage_points": 0.0,
+      "range_percentage_points": [
+        -50.0,
+        50.0
+      ]
+    }
+  },
+  "chatgpt_google_conventional_overlap": {
+    "English": {
+      "observations": 24,
+      "exact_captures": 16,
+      "partial_captures": 8,
+      "exact_citation_urls": 56,
+      "exact_overlap_urls": 11,
+      "exact_pooled_overlap_pct": 19.6,
+      "exact_mean_query_overlap_pct": 26.1,
+      "exact_query_overlap_range_pct": [
+        0.0,
+        100.0
+      ],
+      "partial_visible_matches": 2,
+      "partial_unobserved_citation_urls": 32
+    },
+    "Filipino": {
+      "observations": 24,
+      "exact_captures": 12,
+      "partial_captures": 12,
+      "exact_citation_urls": 42,
+      "exact_overlap_urls": 3,
+      "exact_pooled_overlap_pct": 7.1,
+      "exact_mean_query_overlap_pct": 10.4,
+      "exact_query_overlap_range_pct": [
+        0.0,
+        50.0
+      ],
+      "partial_visible_matches": 2,
+      "partial_unobserved_citation_urls": 48
+    }
+  },
+  "coder_agreement_P01_P08": {
+    "publisher_sector": {
+      "n": 201,
+      "exact_agreement_pct": 100.0,
+      "cohens_kappa": 1.0
+    },
+    "geographic_reach": {
+      "n": 201,
+      "exact_agreement_pct": 100.0,
+      "cohens_kappa": 1.0
+    },
+    "source_language": {
+      "n": 201,
+      "exact_agreement_pct": 100.0,
+      "cohens_kappa": 1.0
+    },
+    "local_relevance_strict": {
+      "n": 201,
+      "exact_agreement_pct": 100.0,
+      "cohens_kappa": 1.0
+    },
+    "local_relevance_inclusive": {
+      "n": 201,
+      "exact_agreement_pct": 100.0,
+      "cohens_kappa": 1.0
+    },
+    "topical_relation": {
+      "n": 201,
+      "exact_agreement_pct": 100.0,
+      "cohens_kappa": 1.0
+    },
+    "publisher_location": {
+      "n": 201,
+      "exact_agreement_pct": 100.0,
+      "cohens_kappa": 1.0
+    },
+    "conventional_top10_presence": {
+      "n": 201,
+      "exact_agreement_pct": 100.0,
+      "cohens_kappa": 1.0
+    },
+    "access_status": {
+      "n": 201,
+      "exact_agreement_pct": 98.51,
+      "cohens_kappa": 0.9728
+    }
+  },
+  "coder_agreement_P09_P24": {
+    "publisher_sector": {
+      "n": 360,
+      "exact_agreement_pct": 90.83,
+      "cohens_kappa": 0.8671
+    },
+    "geographic_reach": {
+      "n": 360,
+      "exact_agreement_pct": 53.06,
+      "cohens_kappa": 0.3661
+    },
+    "source_language": {
+      "n": 360,
+      "exact_agreement_pct": 96.39,
+      "cohens_kappa": 0.8832
+    },
+    "local_relevance_strict": {
+      "n": 360,
+      "exact_agreement_pct": 66.67,
+      "cohens_kappa": 0.3955
+    },
+    "local_relevance_inclusive": {
+      "n": 360,
+      "exact_agreement_pct": 56.94,
+      "cohens_kappa": 0.1124
+    },
+    "topical_relation": {
+      "n": 360,
+      "exact_agreement_pct": 70.0,
+      "cohens_kappa": 0.2222
+    },
+    "publisher_location": {
+      "n": 360,
+      "exact_agreement_pct": 57.5,
+      "cohens_kappa": 0.3768
+    },
+    "conventional_top10_presence": {
+      "n": 360,
+      "exact_agreement_pct": 56.39,
+      "cohens_kappa": 0.396
+    },
+    "access_status": {
+      "n": 360,
+      "exact_agreement_pct": 69.72,
+      "cohens_kappa": 0.0
+    }
+  }
+}
