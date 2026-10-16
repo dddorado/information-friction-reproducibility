@@ -1,7 +1,10 @@
 {
   "audit_counts": {
+    "frozen_coding_records": 561,
+    "duplicate_cross_surface_records_grouped": 28,
     "query_language_system_combinations": 96,
-    "unique_normalized_source_records": 561,
+    "unique_normalized_source_records": 533,
+    "analysis_unit": "unique normalized URL per query-language-system cell",
     "citation_overlap_observations": 48
   },
   "source_visibility_by_surface": {
@@ -13,25 +16,25 @@
       "inclusive_pct": 91.8
     },
     "google_ai_overview": {
-      "records": 177,
-      "strict_yes": 107,
-      "strict_pct": 60.5,
-      "inclusive_yes": 159,
-      "inclusive_pct": 89.8
+      "records": 149,
+      "strict_yes": 86,
+      "strict_pct": 57.7,
+      "inclusive_yes": 132,
+      "inclusive_pct": 88.6
     },
     "google_ai_overview;google_conventional": {
-      "records": 21,
-      "strict_yes": 16,
-      "strict_pct": 76.2,
-      "inclusive_yes": 19,
-      "inclusive_pct": 90.5
+      "records": 49,
+      "strict_yes": 37,
+      "strict_pct": 75.5,
+      "inclusive_yes": 46,
+      "inclusive_pct": 93.9
     },
     "google_conventional": {
-      "records": 181,
-      "strict_yes": 65,
-      "strict_pct": 35.9,
-      "inclusive_yes": 128,
-      "inclusive_pct": 70.7
+      "records": 153,
+      "strict_yes": 44,
+      "strict_pct": 28.8,
+      "inclusive_yes": 101,
+      "inclusive_pct": 66.0
     }
   },
   "source_visibility_by_system_and_language": {
@@ -50,18 +53,18 @@
       "inclusive_pct": 90.2
     },
     "Google_Search / English": {
-      "records": 201,
-      "strict_yes": 103,
-      "strict_pct": 51.2,
-      "inclusive_yes": 167,
-      "inclusive_pct": 83.1
+      "records": 175,
+      "strict_yes": 84,
+      "strict_pct": 48.0,
+      "inclusive_yes": 142,
+      "inclusive_pct": 81.1
     },
     "Google_Search / Filipino": {
-      "records": 178,
-      "strict_yes": 85,
-      "strict_pct": 47.8,
-      "inclusive_yes": 139,
-      "inclusive_pct": 78.1
+      "records": 176,
+      "strict_yes": 83,
+      "strict_pct": 47.2,
+      "inclusive_yes": 137,
+      "inclusive_pct": 77.8
     }
   },
   "matched_language_contrasts": {
@@ -90,56 +93,510 @@
     "Google_Search / strict": {
       "pairs": 24,
       "filipino_higher": 10,
-      "english_higher": 10,
-      "same": 4,
+      "english_higher": 9,
+      "same": 5,
       "median_difference_percentage_points": 0.0,
       "range_percentage_points": [
-        -41.7,
-        50.0
+        -37.5,
+        60.0
       ]
     },
     "Google_Search / inclusive": {
       "pairs": 24,
-      "filipino_higher": 5,
+      "filipino_higher": 6,
       "english_higher": 10,
-      "same": 9,
+      "same": 8,
       "median_difference_percentage_points": 0.0,
       "range_percentage_points": [
         -50.0,
-        50.0
+        60.0
       ]
+    }
+  },
+  "collection_coverage": {
+    "ChatGPT_Search / English": {
+      "cells": 24,
+      "answer_or_page_observed": 24,
+      "verified_exact_conventional_captures": null,
+      "partial_conventional_captures": null,
+      "ai_overview_visible": null
+    },
+    "ChatGPT_Search / Filipino": {
+      "cells": 24,
+      "answer_or_page_observed": 24,
+      "verified_exact_conventional_captures": null,
+      "partial_conventional_captures": null,
+      "ai_overview_visible": null
+    },
+    "Google_Search / English": {
+      "cells": 24,
+      "answer_or_page_observed": 24,
+      "verified_exact_conventional_captures": 0,
+      "partial_conventional_captures": 24,
+      "ai_overview_visible": 24
+    },
+    "Google_Search / Filipino": {
+      "cells": 24,
+      "answer_or_page_observed": 24,
+      "verified_exact_conventional_captures": 0,
+      "partial_conventional_captures": 24,
+      "ai_overview_visible": 23
     }
   },
   "chatgpt_google_conventional_overlap": {
     "English": {
       "observations": 24,
-      "exact_captures": 8,
-      "partial_captures": 16,
-      "exact_citation_urls": 35,
-      "exact_overlap_urls": 6,
-      "exact_pooled_overlap_pct": 17.1,
-      "exact_mean_query_overlap_pct": 19.0,
-      "exact_query_overlap_range_pct": [
-        0.0,
-        60.0
-      ],
-      "partial_visible_matches": 7,
-      "partial_unobserved_citation_urls": 48
+      "verified_exact_captures": 0,
+      "partial_captures": 24,
+      "citation_urls": 90,
+      "observed_matches": 13,
+      "citation_urls_not_observed": 77,
+      "observed_match_pct": 14.4,
+      "per_query": [
+        {
+          "pair_id": "P01",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 9,
+          "chatgpt_citation_urls": 2,
+          "observed_matches": 1,
+          "citation_urls_not_observed": 1
+        },
+        {
+          "pair_id": "P02",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 9,
+          "chatgpt_citation_urls": 3,
+          "observed_matches": 1,
+          "citation_urls_not_observed": 2
+        },
+        {
+          "pair_id": "P03",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 2,
+          "chatgpt_citation_urls": 4,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 4
+        },
+        {
+          "pair_id": "P04",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 8,
+          "chatgpt_citation_urls": 1,
+          "observed_matches": 1,
+          "citation_urls_not_observed": 0
+        },
+        {
+          "pair_id": "P05",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 6,
+          "chatgpt_citation_urls": 3,
+          "observed_matches": 1,
+          "citation_urls_not_observed": 2
+        },
+        {
+          "pair_id": "P06",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 8,
+          "chatgpt_citation_urls": 2,
+          "observed_matches": 1,
+          "citation_urls_not_observed": 1
+        },
+        {
+          "pair_id": "P07",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 9,
+          "chatgpt_citation_urls": 2,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 2
+        },
+        {
+          "pair_id": "P08",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 9,
+          "chatgpt_citation_urls": 4,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 4
+        },
+        {
+          "pair_id": "P09",
+          "original_capture_status": "complete_exact_urls",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 5,
+          "chatgpt_citation_urls": 4,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 4
+        },
+        {
+          "pair_id": "P10",
+          "original_capture_status": "complete_exact_urls",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 3,
+          "chatgpt_citation_urls": 3,
+          "observed_matches": 1,
+          "citation_urls_not_observed": 2
+        },
+        {
+          "pair_id": "P11",
+          "original_capture_status": "complete_exact_urls",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 8,
+          "chatgpt_citation_urls": 4,
+          "observed_matches": 1,
+          "citation_urls_not_observed": 3
+        },
+        {
+          "pair_id": "P12",
+          "original_capture_status": "complete_exact_urls",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 9,
+          "chatgpt_citation_urls": 3,
+          "observed_matches": 1,
+          "citation_urls_not_observed": 2
+        },
+        {
+          "pair_id": "P13",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 0,
+          "chatgpt_citation_urls": 7,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 7
+        },
+        {
+          "pair_id": "P14",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 5,
+          "chatgpt_citation_urls": 4,
+          "observed_matches": 1,
+          "citation_urls_not_observed": 3
+        },
+        {
+          "pair_id": "P15",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 6,
+          "chatgpt_citation_urls": 5,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 5
+        },
+        {
+          "pair_id": "P16",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 4,
+          "chatgpt_citation_urls": 5,
+          "observed_matches": 1,
+          "citation_urls_not_observed": 4
+        },
+        {
+          "pair_id": "P17",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 0,
+          "chatgpt_citation_urls": 4,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 4
+        },
+        {
+          "pair_id": "P18",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 5,
+          "chatgpt_citation_urls": 3,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 3
+        },
+        {
+          "pair_id": "P19",
+          "original_capture_status": "complete_exact_urls",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 2,
+          "chatgpt_citation_urls": 8,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 8
+        },
+        {
+          "pair_id": "P20",
+          "original_capture_status": "complete_exact_urls",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 1,
+          "chatgpt_citation_urls": 5,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 5
+        },
+        {
+          "pair_id": "P21",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 4,
+          "chatgpt_citation_urls": 4,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 4
+        },
+        {
+          "pair_id": "P22",
+          "original_capture_status": "complete_exact_urls",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 5,
+          "chatgpt_citation_urls": 5,
+          "observed_matches": 3,
+          "citation_urls_not_observed": 2
+        },
+        {
+          "pair_id": "P23",
+          "original_capture_status": "complete_exact_urls",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 4,
+          "chatgpt_citation_urls": 3,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 3
+        },
+        {
+          "pair_id": "P24",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 0,
+          "chatgpt_citation_urls": 2,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 2
+        }
+      ]
     },
     "Filipino": {
       "observations": 24,
-      "exact_captures": 4,
-      "partial_captures": 20,
-      "exact_citation_urls": 18,
-      "exact_overlap_urls": 0,
-      "exact_pooled_overlap_pct": 0.0,
-      "exact_mean_query_overlap_pct": 0.0,
-      "exact_query_overlap_range_pct": [
-        0.0,
-        0.0
-      ],
-      "partial_visible_matches": 5,
-      "partial_unobserved_citation_urls": 69
+      "verified_exact_captures": 0,
+      "partial_captures": 24,
+      "citation_urls": 92,
+      "observed_matches": 5,
+      "citation_urls_not_observed": 87,
+      "observed_match_pct": 5.4,
+      "per_query": [
+        {
+          "pair_id": "P01",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 5,
+          "chatgpt_citation_urls": 4,
+          "observed_matches": 1,
+          "citation_urls_not_observed": 3
+        },
+        {
+          "pair_id": "P02",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 8,
+          "chatgpt_citation_urls": 3,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 3
+        },
+        {
+          "pair_id": "P03",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 9,
+          "chatgpt_citation_urls": 3,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 3
+        },
+        {
+          "pair_id": "P04",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 8,
+          "chatgpt_citation_urls": 2,
+          "observed_matches": 1,
+          "citation_urls_not_observed": 1
+        },
+        {
+          "pair_id": "P05",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 9,
+          "chatgpt_citation_urls": 4,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 4
+        },
+        {
+          "pair_id": "P06",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 9,
+          "chatgpt_citation_urls": 2,
+          "observed_matches": 1,
+          "citation_urls_not_observed": 1
+        },
+        {
+          "pair_id": "P07",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 7,
+          "chatgpt_citation_urls": 3,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 3
+        },
+        {
+          "pair_id": "P08",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 1,
+          "chatgpt_citation_urls": 3,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 3
+        },
+        {
+          "pair_id": "P09",
+          "original_capture_status": "complete_exact_urls",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 9,
+          "chatgpt_citation_urls": 3,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 3
+        },
+        {
+          "pair_id": "P10",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 0,
+          "chatgpt_citation_urls": 4,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 4
+        },
+        {
+          "pair_id": "P11",
+          "original_capture_status": "complete_exact_urls",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 9,
+          "chatgpt_citation_urls": 2,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 2
+        },
+        {
+          "pair_id": "P12",
+          "original_capture_status": "complete_exact_urls",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 1,
+          "chatgpt_citation_urls": 6,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 6
+        },
+        {
+          "pair_id": "P13",
+          "original_capture_status": "complete_exact_urls",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 1,
+          "chatgpt_citation_urls": 7,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 7
+        },
+        {
+          "pair_id": "P14",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 0,
+          "chatgpt_citation_urls": 5,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 5
+        },
+        {
+          "pair_id": "P15",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 0,
+          "chatgpt_citation_urls": 4,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 4
+        },
+        {
+          "pair_id": "P16",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 0,
+          "chatgpt_citation_urls": 4,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 4
+        },
+        {
+          "pair_id": "P17",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 0,
+          "chatgpt_citation_urls": 4,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 4
+        },
+        {
+          "pair_id": "P18",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 0,
+          "chatgpt_citation_urls": 2,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 2
+        },
+        {
+          "pair_id": "P19",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 0,
+          "chatgpt_citation_urls": 8,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 8
+        },
+        {
+          "pair_id": "P20",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 0,
+          "chatgpt_citation_urls": 4,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 4
+        },
+        {
+          "pair_id": "P21",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 0,
+          "chatgpt_citation_urls": 5,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 5
+        },
+        {
+          "pair_id": "P22",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 5,
+          "chatgpt_citation_urls": 4,
+          "observed_matches": 2,
+          "citation_urls_not_observed": 2
+        },
+        {
+          "pair_id": "P23",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 0,
+          "chatgpt_citation_urls": 3,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 3
+        },
+        {
+          "pair_id": "P24",
+          "original_capture_status": "partial",
+          "analysis_capture_status": "partial_no_ten_position_record",
+          "identifiable_conventional_urls": 0,
+          "chatgpt_citation_urls": 3,
+          "observed_matches": 0,
+          "citation_urls_not_observed": 3
+        }
+      ]
     }
   },
   "coder_agreement_P01_P08": {
@@ -235,5 +692,25 @@
       "exact_agreement_pct": 69.72,
       "cohens_kappa": 0.0
     }
+  },
+  "coding_batch_totals_P01_P08": {
+    "coding_records": 201,
+    "fields_per_record": 9,
+    "field_pairs": 1809,
+    "matching_field_pairs": 1250,
+    "field_disagreements": 559,
+    "overall_exact_agreement_pct": 69.1,
+    "records_with_all_fields_agreeing": 2,
+    "records_with_any_disagreement": 199
+  },
+  "coding_batch_totals_P09_P24": {
+    "coding_records": 360,
+    "fields_per_record": 9,
+    "field_pairs": 3240,
+    "matching_field_pairs": 2223,
+    "field_disagreements": 1017,
+    "overall_exact_agreement_pct": 68.61,
+    "records_with_all_fields_agreeing": 52,
+    "records_with_any_disagreement": 308
   }
 }

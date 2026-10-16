@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+recalculated-results.json
+~$*
+.DS_Store
+Thumbs.db

@@ -1,0 +1,11 @@
+{
+  "full-24-pair-cell-coverage.csv": "3297a26920cf1b3dbb9df5610531edcdd4bd2af471c04085d90119d473d174d9",
+  "full-24-pair-citation-carry-through-adjudicated.csv": "2dce4c95ccdb7c4b6eba4236faadc11ac27057936d30cd9a7b9fc65d933944b0",
+  "full-24-pair-source-table-adjudicated.csv": "babe974c2204f2ffb79e0da9cfc8222b3d05245b2089adaaea66c7b948567011",
+  "P01-P08-adjudication-decisions.csv": "cee390115e0036e6b9ca82beec4781b2205b12492864fc692f23fad4ade3350a",
+  "p09-p24-adjudication.csv": "726d2ab9476e6024898b52a4b42c041414faf7143f3106c56c5c18162698ad23",
+  "p09-p24-logic-corrections.csv": "772f8156b43ade425c136fcd57b681c5234360417e42e9f13355cb111b8d6fff",
+  "p09-p24-second-coder-values.csv": "d6c4e1afff0d8cec19e9ba58e39f92b9c45d60d5cb0c35c4e537709ad8a4db0f",
+  "pilot-second-coder-values.csv": "c86d8a4ff1b7e04699a14a2ae9c84c11f45daf15fc4f5be58ea3bd7e7cb8f001",
+  "queries.csv": "0122dd90f75cc79b0fe38d17ffbd66974c2ca9211e7eefa2dd21bec61881e669"
+}

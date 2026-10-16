@@ -1,15 +1,16 @@
 cff-version: 1.2.0
 message: "If you use these materials, please cite the paper and this repository."
 type: dataset
-title: "Reproducibility materials for Measuring Source Visibility in Generative Search"
+title: "Reproducibility materials for Local Source Visibility in Generative Search"
 abstract: >-
   Coded source records, paired coder values, codebook, and a script to recalculate
   descriptive results for a paired audit of English and Filipino local-information
   queries in Philippine cities. Includes the preserved initial P01-P08 reliability
-  pass and dated project-lead adjudication materials.
+  pass and dated project-lead adjudication materials. Version 1.2.0 uses consistent
+  within-cell URL grouping and observed citation matches in incomplete captures.
 authors:
   - family-names: Dorado
     given-names: Dan Anthony
 repository-code: "https://github.com/dddorado/information-friction-reproducibility"
-version: "1.1.0"
-date-released: "2026-10-15"
+version: "1.2.0"
+date-released: "2026-10-16"
